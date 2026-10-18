@@ -1,0 +1,74 @@
+
+/* Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #184d35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Mobile-first layout */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #184d35;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tablet layout */
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 40%;
+    }
+}
+
+/* Laptop and desktop layout */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .card {
+        flex: 1 1 25%;
+    }
+}
